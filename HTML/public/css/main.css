@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* ________________________________ NAVBAR ___________________________________________________ */
+
+.fixPos {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navContainer {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoText a,
+.logoText a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navList li {
+    list-style: none;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.navList li a {
+    display: inline-block;
+    font-size: large;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+    padding: 10px;
+}
+
+.navList li a:hover,
+.navList li a:active {
+    color: #ffbd2f;
+}
+
+.logoText {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#navList .current a,
+#navList .current a:link {
+    color: #ffbd2f;
+}
+
+.navList .current a:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 1;
+    height: 3px;
+    content: "";
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    background: #ffbd2f;
+}
+
+
+/*________________________________________________ HEADER ___________________________________________________*/
+
+.header {
+    width: auto;
+    height: 90vh;
+    display: flex;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 75% 60vh, 20% 70vh 0 80vh);
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header p {}
+
+.header h1 {}
+
+.header .typeWriter {}
+
+.header .iconBox {
+    display: flex;
+    width: 100px;
+}
+
+.runningIconBox {}

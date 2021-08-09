@@ -1,0 +1,89 @@
+body.sign-body{
+	background-color: #e6f2ff;
+}
+
+.container.signin-container{
+	margin-top: 2%;
+	margin-bottom: 8%;
+	
+}
+.card.signin-card{
+	padding: 0px 0px 0px;
+	background-color: #f4f4f4;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+	-webkit-box-shadow:2px 2px 5px rgba(0,0,0,.5);
+	-moz-box-shadow:2px 2px 5px rgba(0,0,0,.5);
+}
+
+.img-fluid.signin-img{
+	padding: 0 2rem 2rem;
+	margin: auto;
+	display: block;
+}
+.card-block{
+	margin: auto;
+	display: block;
+
+}
+form.signin-form{
+	max-width: 350px;
+	margin: auto;
+	
+}
+
+img{
+	width: 50%;
+	
+}
+button.signin-btn{
+	width: 100%;
+	background-color: dodgerblue;
+	color: aliceblue;
+	
+	margin-bottom: 1.2rem;
+}
+
+a.create-new-acc{
+	font-size: 1.2rem;
+	text-align: center;
+	display: block;
+	
+}
+
+input.form-check-input{
+	display: block;
+	margin: auto;
+	padding-right: 0;
+	text-align: center;
+	
+}
+label{
+	margin-left: 10px;
+}
+.col-1{
+	margin-top: 8px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+
+.col-11{
+	padding-left: 0;
+	padding-right: 0;
+	text-align: left;
+	tab-size: 1.2rem;
+	
+}
+div.container.cc{
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	display: block;
+	margin: auto;
+}
+
+.row.ck{
+	margin-left: 8px;
+}
+

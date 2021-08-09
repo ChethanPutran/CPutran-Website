@@ -1,0 +1,169 @@
+.jumbotron {
+  text-align: center;
+  background-color: aliceblue;
+  max-height: 20rem;
+  margin-bottom: 0rem;
+}
+
+.carousel-item img {
+  max-height: 20rem;
+}
+.sectionLight {
+  background-color: aliceblue;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 0rem;
+}
+
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem;
+}
+.coolThings {
+  margin-top: 20px;
+}
+button.coolButton {
+  background-color: red;
+  color: white;
+  display: block;
+  margin: auto;
+  border-color: white;
+  border-width: 1px;
+}
+
+div.col-12-sm.mkdir {
+  padding: auto;
+}
+.card {
+  background-color: #cccccc;
+  margin-bottom: 8px;
+}
+
+h5.modal-title {
+  margin: auto;
+}
+img.notty {
+  margin: auto;
+}
+.modalForm {
+  padding: 2rem;
+}
+
+.imgCentre {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+div.sectionLight2 {
+  padding-top: 30px;
+  background-color: aliceblue;
+}
+.btnCenter {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: red;
+  color: white;
+  border: 10px;
+  border-color: white;
+  width: 65%;
+}
+
+footer div.k.row {
+  background-color: darkslategray;
+}
+/*
+
+@media screen and (max-width:500px){
+	img.mblres{
+		width:120px;
+		height: 120px;
+		align-content: center;
+		margin:  -top:5px;
+		margin:  -bottom: 5px;
+			
+	}
+	
+}
+*/
+
+.footerleg {
+  padding: 10px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+.fa-twitter-square {
+  color: #3b5998;
+}
+.fa-instagram {
+  color: white;
+}
+.fa-envelope {
+  color: red;
+}
+.wraper {
+  padding: 30px;
+}
+div.wraper a {
+  margin: 15px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+h3 {
+  color: black;
+}
+li {
+  color: whitesmoke;
+}
+.footIn {
+  padding-top: 30px;
+}
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+  color: darkblue;
+}
+#social-tw:hover {
+  color: #4099ff;
+}
+#social-ig:hover {
+  color: #d34836;
+}
+#social-em:hover {
+  color: darkred;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+* {
+  font-family: "Fredoka One", cursive;
+}

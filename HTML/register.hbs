@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Register</title>
+    <link rel="stylesheet" href="css/welcome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+    function hideURLbar(){ 
+        window.scrollTo(0,1);
+         }
+         </script>
+
+    <!-- Custom Theme files -->
+    <link href="css/register3.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+    <link rel="stylesheet" href="css/global.css">
+
+</head>
+
+<body id="bodys">
+    <div class='scroll-header' id='head-trigger'>
+        <div class='scroll-head-wrap row'>
+            <div class='scrollin-logo'>
+                <div class='header section' id='header' name='Logo & Title'>
+                    <div class='widget Header' data-version='1' id='Header1'>
+                        <div id='header-inner'>
+                            <a href='#' style='display: block'>
+                                <h1>CA-ARTS</h1>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='scrolling-menu'>
+                <ul id='nav'>
+                    <li class='current'><a href='/'>Home</a></li>
+                    <li><a href='/'>About Us</a></li>
+                    <li><a href='/'>Secret</a></li>
+                    <li><a href='/register'>Register</a></li>
+                    <li><a href='/login'>Login</a></li>
+                    <li><a href='/contact'>Contact</a></li>
+                </ul>
+                <div class='menu-mobile2'></div>
+            </div>
+            <div class='tm-menu'>
+                <div class='menu-wrap'>
+                    <div class='menu section' id='menu' name='Main Menu'>
+                        <div class='widget LinkList' data-version='1' id='LinkList210'>
+
+                        </div>
+                        <div class='menu-mobile'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- main -->
+    <div class="container-fluid">
+        <br>
+        <br>
+
+
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form name="contactForm" onsubmit="return validateForm()" action="/register" method="post">
+                    <div>
+
+                        <input class="text" type="text" name="fname" placeholder="First Name" required="*required"
+                            maxlength="10" minlength="3" title="Enter first name" pattern="^[a-zA-Z\s]+$">
+
+                    </div>
+                    <div>
+                        <input class="text w3lpass" type="text" name="lname" placeholder="Last Name"
+                            required="*required" maxlength="10" minlength="3" title="Enter last name"
+                            pattern="^[a-zA-Z\s]+$">
+                    </div>
+                    <div>
+
+                        <input class="text email" type="text" name="email" placeholder="Email" required="*required"
+                            title="Enter email" pattern="^[a-zA-Z0-9_]{3,30}@[A-Za-z]{3,15}[.]{1}[a-zA-Z.]{2,6}$">
+                    </div>
+                    <div>
+
+                        <input class="text" id="password" type="password" name="password" placeholder="Password"
+                            required="*required" title="Password must contain the following: 
+                    A lowercase  letter (a-z),
+                    A capital (uppercase) letter (A-Z),
+                    A number(0-9),
+                    A special character (!@#$%^&*_),
+                    Minimum 8 characters and maximum 16 characters."
+                            pattern="^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*_])[a-zA-Z0-9!@#$%^&*_]{8,16}$">
+                    </div>
+                    <div>
+                        <input class="text w3lpass" id="confirmpassword" type="password" name="confirmpassword"
+                            placeholder="Confirm Password" required="*required" title="Confirm your password"
+                            pattern="^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*_])[a-zA-Z0-9!@#$%^&*_]{8,16}$">
+                    </div>
+                    <div>
+                        <input class="text email" type="text" name="phone" placeholder="Phone Number"
+                            required="*required" pattern="^[789]{1}[0-9]{9}$" title="Enter valid phone number">
+                    </div>
+                    <div>
+                        <input class="text email" type="text" name="age" placeholder="Age" required="*required"
+                            minlength="1" maxlength="2" pattern="^[1-9]{1}[0-9]{1}$" title="Enter your age">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group x">
+                            <label class="" style="color: white;font-size:15px;font-weight:100;">Gender</label>
+                        </div>
+                        <div class="form-inline">
+                            <label class="st">
+                                <input class="text" type="radio" name="gender" value="male" required="*required">
+                                Male</label>
+                            <label class="st">
+                                <input class="text" type="radio" name="gender" value="female">Female</label>
+                            <label class="st">
+                                <input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+
+                    </div>
+                    <div class="form-group datalist">
+                        <label style="color: white;
+                        font-size:15px;
+                        font-weight:100;
+                        ">Country</label>
+                        <select name="country">
+                            <option>Select</option>
+                            <option value="India">India</option>
+                            <option value="Australia">Australia</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group datalist">
+                        <label style="color: white;
+                        font-size:15px;
+                        font-weight:100;
+                        ">Your Role</label><br>
+                        <input list="role" name="role" required="*required">
+                        <datalist id="role">
+                            <option value="Student">
+                            <option value="Mentor">
+                            <option value="Designer">
+                            <option value="Artist">
+                            <option value="Others">
+                        </datalist>
+                    </div>
+                    <div class="wthree-text datalist">
+                        <label class="anim">
+                            <input type="checkbox" class="checkbox" required="">
+                            <span>I Agree To The Terms & Conditions</span>
+                        </label>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="form-group xr">
+                        <input class="learnmore btn-primary x" type="submit" value="Submit" name="">
+                    </div>
+                </form>
+                <p>Have an account? <a href="/login"> Login Now!</a></p>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="colorlibcopy-agile">
+            <p>© 2021 CA-ARTS. All rights reserved | Design by <a href="http://caarts.tech/" target="_blank">CA-Arts</a>
+            </p>
+        </div>
+        <!-- //copyright -->
+        <ul class="colorlib-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+
+    </div>
+    <div class='bot-bar-menu'>
+        <div class='bot-menu-wrap row'>
+            <div class='bot-menu section' id='Bottom-menu'>
+                <div class='widget PageList' data-version='1' id='PageList1'>
+                    <h2>Pages</h2>
+                    <div class='widget-content'>
+                        <ul id='nav2'>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <p style="color: azure;">© 2021 CA-ARTS. All rights reserved | Design by <a href="http://caarts.tech/"
+                        target="_blank" style="color: aqua;">CA-Arts</a>
+                </p>
+            </div>
+
+            <div class='jugas_footer_copyright' style="font-size:12px;">
+                Created By <a href='http://caarts.tech/' id='mycontent' rel='dofollow'
+                    title='Free Blogger Templates'>CA-ARTS</a> | <a href='#' title='Free Blogger Templates'>Free
+                    Blogger Templates</a>| Distributed By <a href='#' rel='dofollow' style='color:#ffbd2f;'
+                    target='_blank'>MyBloggerThemes</a>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+
+        function validateForm() {
+
+            var password = document.getElementById( "password" ).value;
+            var cpassword = document.getElementById( "confirmpassword" ).value;
+            if ( cpassword.match( password ) )
+            {
+                return true;
+
+            } else
+            {
+
+                alert( "Password should match" );
+                return false;
+            }
+        }
+
+    </script>
+
+
+
+    <!-- //main -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/special/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    {{>jquery}}
+
+</body>
+
+</html>
